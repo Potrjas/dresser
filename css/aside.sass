@@ -1,0 +1,51 @@
+main aside
+	border-radius: 12px
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3)
+	display: flex
+	width: 120px
+	right: -12px
+	flex-direction: column
+	justify-content: space-around
+	align-items: center
+	a
+		display: block
+		height: 70px
+		width: 90%
+		margin-left: 10%
+		padding-right: 20%
+		border-top-left-radius: 35px
+		border-bottom-left-radius: 35px
+		text-align: center
+		img
+			height: 50px
+			width: auto
+			top: 10px
+		img:last-of-type
+			display: none
+		span
+			position: absolute
+			display: block
+			height: 25px
+			width: 25px
+			top: 0
+			left: 60px
+			border-radius: 50%
+			background-color: $red
+			font-size: 12px
+			line-height: 2
+			color: #fff
+			text-align: center
+	a:hover, a.act
+		background: linear-gradient(15deg, $blue -50%, $red 100%)
+		img:first-of-type
+			display: none
+		img:last-of-type
+			display: inline
+	a.act ,a.act img
+		cursor: default
+.catalog aside
+	height: 80vh
+	min-height: 440px
+	max-height: 642px
+	right: -12px
+	float: right

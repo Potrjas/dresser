@@ -1,0 +1,975 @@
+@font-face {
+  font-family: FontAwesome;
+  src: url(../fonts/FontAwesome.otf); }
+@font-face {
+  font-family: LatoRegular;
+  src: url(../fonts/LatoRegular.ttf); }
+* {
+  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  line-height: inherit;
+  color: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  list-style: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  outline: none;
+  box-shadow: none;
+  box-sizing: border-box;
+  cursor: default; }
+
+a, a *, button, input[type='range'], input[type='button'],
+input[type='submit'], input[type='reset'] {
+  cursor: pointer; }
+
+input {
+  cursor: text; }
+
+img {
+  vertical-align: middle; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+html, body {
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-family: LatoRegular, sans-serif;
+  overflow-x: hidden; }
+
+*::-moz-selection {
+  background-color: inherit;
+  color: inherit; }
+
+*::selection {
+  background-color: inherit;
+  color: inherit; }
+
+.clear {
+  display: block;
+  width: 100%;
+  height: 0;
+  clear: both; }
+
+.pd, .pd * {
+  cursor: default !important; }
+
+.fa {
+  font-family: FontAwesome, sans-serif; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100% !important;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.5); }
+
+main {
+  overflow-x: hidden; }
+
+header > div, main > div {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto; }
+
+.nicescroll-rails {
+  display: none !important; }
+
+.start {
+  display: none;
+  position: absolute;
+  height: 100vh;
+  min-height: 600px;
+  width: 100%;
+  background: url("../images/logo.png") no-repeat center 40px, url("../images/overlay.jpg") no-repeat center center;
+  background-size: auto, cover;
+  z-index: 2; }
+  .start > a, .start span {
+    display: block;
+    height: 50px;
+    width: 306px;
+    top: 330px;
+    margin: 35px auto;
+    border-radius: 25px;
+    font-size: 14px;
+    line-height: 3.5;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff; }
+  .start > a:first-of-type {
+    border: 2px solid #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
+  .start > a:last-of-type {
+    background: linear-gradient(15deg, #465EE0 -50%, #ED2582 100%);
+    box-shadow: 0 5px 10px rgba(205, 50, 150, 0.4); }
+  .start span {
+    width: 350px; }
+    .start span a {
+      display: inline-block;
+      height: 50px;
+      width: 50px;
+      margin-left: 10px;
+      border-radius: 50%;
+      vertical-align: bottom; }
+    .start span a:first-child {
+      background-color: #4D76A1;
+      font-size: 30px;
+      line-height: 48px; }
+    .start span a:nth-child(2) {
+      background-color: #3B5998;
+      font-size: 34px;
+      line-height: 52px; }
+    .start span a:nth-child(3) {
+      background-color: #DC4E41;
+      font-size: 24px;
+      line-height: 50px; }
+    .start span a:last-child {
+      background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+      font-size: 30px;
+      line-height: 48px; }
+
+header {
+  background: radial-gradient(80px at 50% 25%, #FFFFFF 0%, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 0%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F2F2F2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3); }
+  header > div {
+    display: flex;
+    justify-content: space-between;
+    background: url("../images/logoMin.png") no-repeat center 20px;
+    background-size: 32px auto; }
+    header > div > a {
+      height: 60px;
+      margin: 15px 0;
+      padding: 22px;
+      border-radius: 30px;
+      font-family: LatoBold, sans-serif;
+      font-size: 16px;
+      white-space: nowrap;
+      text-transform: uppercase;
+      color: #fff; }
+      header > div > a img {
+        display: inline-block;
+        padding: 0 10px;
+        vertical-align: top; }
+    header > div .tGrad {
+      background: linear-gradient(45deg, #465EE0 -10%, #ED2582 80%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+      header > div .tGrad .imgWh {
+        display: none; }
+    header > div .tGrad:hover {
+      background: linear-gradient(15deg, #465EE0 -50%, #ED2582 100%);
+      box-shadow: 0 6px 12px rgba(205, 50, 150, 0.4);
+      -webkit-background-clip: border-box;
+      -webkit-text-fill-color: #fff; }
+      header > div .tGrad:hover .imgWh {
+        display: inline-block; }
+      header > div .tGrad:hover .imgGr {
+        display: none; }
+    header > div .aGrad {
+      background: linear-gradient(15deg, #465EE0 -50%, #ED2582 100%);
+      box-shadow: 0 6px 12px rgba(205, 50, 150, 0.4);
+      cursor: default; }
+      header > div .aGrad .imgGr {
+        display: none; }
+      header > div .aGrad .imgWh {
+        cursor: default; }
+    header > div #parameters {
+      left: -30px;
+      padding-left: 60px;
+      text-align: right; }
+    header > div #menu {
+      right: -30px;
+      margin-left: 40px;
+      padding-right: 60px;
+      transition: all 0.3s ease; }
+      header > div #menu span {
+        position: absolute;
+        display: none;
+        height: 60px;
+        width: 100px;
+        top: 0;
+        border-radius: 30px;
+        border: 1px solid #D3D3D3;
+        right: -110px;
+        text-align: center; }
+        header > div #menu span img {
+          height: 20px;
+          width: auto;
+          top: 20px;
+          right: 20px; }
+    header > div #basket {
+      position: absolute;
+      width: 60px;
+      right: 160px;
+      padding: 18px 14px; }
+      header > div #basket span {
+        position: absolute;
+        display: block;
+        height: 25px;
+        width: 25px;
+        top: 5px;
+        left: 30px;
+        border-radius: 50%;
+        background-color: #ED2582;
+        font-size: 12px;
+        line-height: 2;
+        color: #fff;
+        text-align: center; }
+      header > div #basket img {
+        width: 30px;
+        padding: 0; }
+      header > div #basket .imgWh {
+        display: none; }
+    header > div #basket:hover {
+      background-color: #ED2582; }
+      header > div #basket:hover span {
+        background-color: transparent !important; }
+      header > div #basket:hover .imgGr {
+        display: none; }
+      header > div #basket:hover .imgWh {
+        display: block; }
+    header > div .sort {
+      display: flex;
+      max-width: 500px;
+      height: 30px;
+      justify-content: space-between;
+      flex-grow: 1;
+      align-self: flex-end; }
+      header > div .sort a {
+        height: 100%;
+        font-size: 14px;
+        color: #AB8798;
+        text-transform: uppercase; }
+      header > div .sort a.act, header > div .sort a:hover:not(:last-child) {
+        color: #ED2582;
+        border-bottom: 2px solid #ED2582; }
+      header > div .sort a:last-child {
+        color: #AB3E70; }
+        header > div .sort a:last-child span {
+          font-size: 20px;
+          line-height: 0; }
+        header > div .sort a:last-child .invis {
+          display: none; }
+    header > div .menu {
+      position: absolute;
+      display: none;
+      width: 280px;
+      top: 100px;
+      right: -12px;
+      border-radius: 12px;
+      padding: 0 50px 20px 0;
+      background-color: #F7F7F7;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+      z-index: 10;
+      font-size: 21px;
+      line-height: 1.5; }
+      header > div .menu span {
+        display: block;
+        padding-bottom: 24px;
+        border-bottom: 1px solid #D3D3D3; }
+        header > div .menu span a {
+          background: linear-gradient(45deg, #465EE0 -10%, #ED2582 80%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent; }
+      header > div .menu a {
+        display: block;
+        padding-top: 20px;
+        color: #696969;
+        text-align: right; }
+      header > div .menu a.act, header > div .menu a:hover {
+        text-decoration: underline #ED2582; }
+
+.parameters > div {
+  display: flex;
+  padding: 50px 0 50px 50px;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .parameters > div > div {
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); }
+    .parameters > div > div h2 {
+      padding: 20px 0;
+      width: 100%;
+      font-size: 23px;
+      color: #AB3E70;
+      text-align: center;
+      text-transform: uppercase; }
+    @media only all and (max-width: 900px) {
+      .parameters > div > div h2 {
+        font-size: 20px; } }
+  .parameters > div > div:first-of-type {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    width: 50%;
+    padding: 0 2%; }
+    .parameters > div > div:first-of-type div {
+      width: 20%;
+      margin: 10px 6% 0; }
+    .parameters > div > div:first-of-type h3 {
+      height: 45px;
+      margin-top: 15px;
+      font-size: 18px;
+      color: #696969;
+      text-align: center; }
+    .parameters > div > div:first-of-type img {
+      width: 100%;
+      margin-bottom: 25px; }
+    .parameters > div > div:first-of-type p {
+      margin-bottom: 15px;
+      border: 1px solid #ED2582;
+      border-radius: 10px;
+      font-size: 16px;
+      line-height: 1.8;
+      color: #696969;
+      text-align: center; }
+      .parameters > div > div:first-of-type p input {
+        width: 30px;
+        text-align: right; }
+      .parameters > div > div:first-of-type p input::-moz-selection {
+        background-color: #696969;
+        color: #fff; }
+      .parameters > div > div:first-of-type p input::selection {
+        background-color: #696969;
+        color: #fff; }
+    .parameters > div > div:first-of-type div hr {
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      bottom: 2px;
+      background: #4F4F4F; }
+    .parameters > div > div:first-of-type div hr:last-of-type {
+      background: linear-gradient(90deg, #465EE0 10%, #ED2582 90%); }
+    .parameters > div > div:first-of-type input[type="range"] {
+      -webkit-appearance: none;
+      height: 0;
+      width: 100%;
+      border: 1px solid #4F4F4F;
+      background-color: transparent; }
+    .parameters > div > div:first-of-type input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      background: linear-gradient(45deg, #465EE0 0%, #ED2582 100%);
+      box-shadow: 0 6px 12px rgba(205, 50, 150, 0.4); }
+    .parameters > div > div:first-of-type input[type="range"]::-moz-range-track {
+      background-color: transparent; }
+    .parameters > div > div:first-of-type input[type="range"]::-moz-range-thumb {
+      height: 18px;
+      width: 18px;
+      border-radius: 50%;
+      border: none;
+      background: linear-gradient(45deg, #465EE0 0%, #ED2582 100%);
+      box-shadow: 0 6px 12px rgba(205, 50, 150, 0.4); }
+    .parameters > div > div:first-of-type span {
+      position: sticky;
+      display: block;
+      width: 100%;
+      height: 60px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(rgba(255, 255, 255, 0.2), #fff); }
+    .parameters > div > div:first-of-type div:last-of-type {
+      width: 100%;
+      height: 140px; }
+  .parameters > div > div:nth-of-type(2) {
+    width: 30%;
+    align-self: flex-start; }
+    .parameters > div > div:nth-of-type(2) img {
+      display: block;
+      width: 65%;
+      margin: 20px auto; }
+    @media only all and (max-width: 1200px) {
+      .parameters > div > div:nth-of-type(2) img {
+        width: 80%; } }
+  .parameters > div .add {
+    display: none;
+    margin-top: 25px; }
+
+.catalog > div {
+  padding: 25px 0 50px 50px; }
+  .catalog > div p.reverse {
+    width: 100%;
+    padding-bottom: 20px; }
+    .catalog > div p.reverse a {
+      font-size: 16px;
+      color: #ED2582; }
+      .catalog > div p.reverse a span {
+        font-size: 14px; }
+    .catalog > div p.reverse a:last-child {
+      cursor: default; }
+  .catalog > div section {
+    display: flex;
+    width: calc(100% - 130px);
+    flex-wrap: wrap;
+    justify-content: flex-start; }
+    .catalog > div section > div {
+      width: 16%;
+      margin: 25px 40px 25px 0;
+      font-size: 13px;
+      text-transform: uppercase; }
+      .catalog > div section > div div {
+        height: 0;
+        width: 100%;
+        padding-bottom: 150%;
+        border-radius: 12px;
+        background: no-repeat center center;
+        background-size: cover; }
+        .catalog > div section > div div span {
+          display: none;
+          width: 100%;
+          padding-bottom: 150%;
+          background: url("../images/hanger.png") no-repeat center center;
+          background-size: 40px auto;
+          cursor: pointer; }
+      .catalog > div section > div div:hover span {
+        display: block; }
+      .catalog > div section > div h4 {
+        padding: 10px 0 4px;
+        color: #696969;
+        line-height: 1.2; }
+      .catalog > div section > div > span {
+        width: 50%; }
+      .catalog > div section > div > span:first-of-type {
+        color: #D3D3D3;
+        text-decoration: line-through; }
+      .catalog > div section > div > span:last-of-type {
+        color: #AB3E70; }
+    .catalog > div section > div:nth-child(even) div {
+      background-image: url("../tempImages/img1.jpg"); }
+    .catalog > div section > div:nth-child(odd) div {
+      background-image: url("../tempImages/img2.jpg"); }
+
+main aside {
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  width: 120px;
+  right: -12px;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+  main aside a {
+    display: block;
+    height: 70px;
+    width: 90%;
+    margin-left: 10%;
+    padding-right: 20%;
+    border-top-left-radius: 35px;
+    border-bottom-left-radius: 35px;
+    text-align: center; }
+    main aside a img {
+      height: 50px;
+      width: auto;
+      top: 10px; }
+    main aside a img:last-of-type {
+      display: none; }
+    main aside a span {
+      position: absolute;
+      display: block;
+      height: 25px;
+      width: 25px;
+      top: 0;
+      left: 60px;
+      border-radius: 50%;
+      background-color: #ED2582;
+      font-size: 12px;
+      line-height: 2;
+      color: #fff;
+      text-align: center; }
+  main aside a:hover, main aside a.act {
+    background: linear-gradient(15deg, #465EE0 -50%, #ED2582 100%); }
+    main aside a:hover img:first-of-type, main aside a.act img:first-of-type {
+      display: none; }
+    main aside a:hover img:last-of-type, main aside a.act img:last-of-type {
+      display: inline; }
+  main aside a.act, main aside a.act img {
+    cursor: default; }
+
+.catalog aside {
+  height: 80vh;
+  min-height: 440px;
+  max-height: 642px;
+  right: -12px;
+  float: right; }
+
+.reg {
+  display: none;
+  position: absolute;
+  width: 700px;
+  top: 50px;
+  left: 50%;
+  margin-left: -350px;
+  padding: 30px;
+  z-index: 10;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); }
+  .reg h2 {
+    clear: both;
+    font-size: 20px;
+    color: #AB3E70;
+    text-align: center; }
+  .reg p {
+    font-size: 16px;
+    line-height: 3;
+    color: #696969;
+    text-align: center; }
+  .reg #reg {
+    display: none; }
+  .reg form {
+    width: 80%;
+    left: 10%; }
+  .reg input {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    background: #F7F7F7;
+    border-radius: 20px;
+    box-shadow: inset 0 3px 20px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    text-align: center;
+    color: #000; }
+  .reg input[type='submit'] {
+    width: 300px;
+    left: 50%;
+    margin-left: -150px;
+    background-color: #ED2582 !important;
+    text-transform: uppercase;
+    color: #fff; }
+  .reg a {
+    display: block;
+    height: 26px;
+    width: 140px;
+    border-radius: 13px;
+    left: 50%;
+    margin: 10px 0 10px -70px;
+    border: 1px solid #D3D3D3;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    color: #D3D3D3; }
+
+.productCard > div {
+  padding: 25px; }
+  .productCard > div > div {
+    float: left; }
+  .productCard > div h3 {
+    padding-bottom: 20px;
+    clear: both;
+    font-size: 14px;
+    color: #AB3E70;
+    text-align: center;
+    text-transform: uppercase; }
+  .productCard > div > div:first-of-type {
+    height: 650px;
+    width: 14%;
+    margin-right: 2%; }
+    .productCard > div > div:first-of-type p.reverse {
+      width: 100%;
+      padding-bottom: 20px; }
+      .productCard > div > div:first-of-type p.reverse a {
+        display: block;
+        font-size: 16px;
+        color: #ED2582; }
+      .productCard > div > div:first-of-type p.reverse a:first-child {
+        padding-bottom: 15px; }
+        .productCard > div > div:first-of-type p.reverse a:first-child span {
+          font-size: 14px; }
+    .productCard > div > div:first-of-type > div {
+      width: 75%; }
+  .productCard > div > div:last-of-type {
+    height: 650px;
+    width: 19%;
+    float: right; }
+    .productCard > div > div:last-of-type > div {
+      width: 90%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .productCard > div > div:last-of-type > div h3 {
+        width: 100%;
+        padding: 5px 0;
+        color: #696969; }
+      .productCard > div > div:last-of-type > div > div {
+        width: 46%; }
+  .productCard > div > div:first-of-type > div, .productCard > div > div:last-of-type > div > div {
+    margin: 15px 0 25px;
+    font-size: 13px;
+    text-transform: uppercase; }
+    .productCard > div > div:first-of-type > div div, .productCard > div > div:last-of-type > div > div div {
+      height: 0;
+      width: 100%;
+      padding-bottom: 100%;
+      border-radius: 12px;
+      background: no-repeat center center;
+      background-size: cover; }
+      .productCard > div > div:first-of-type > div div span, .productCard > div > div:last-of-type > div > div div span {
+        display: none;
+        width: 100%;
+        padding-bottom: 100%;
+        background: url("../images/hanger.png") no-repeat center center;
+        background-size: 40px auto;
+        cursor: pointer; }
+    .productCard > div > div:first-of-type > div div:hover span, .productCard > div > div:last-of-type > div > div div:hover span {
+      display: block; }
+    .productCard > div > div:first-of-type > div h4, .productCard > div > div:last-of-type > div > div h4 {
+      padding: 10px 0 4px;
+      color: #696969;
+      line-height: 1.2; }
+    .productCard > div > div:first-of-type > div > span, .productCard > div > div:last-of-type > div > div > span {
+      width: 50%; }
+    .productCard > div > div:first-of-type > div > span:first-of-type, .productCard > div > div:last-of-type > div > div > span:first-of-type {
+      color: #D3D3D3;
+      text-decoration: line-through; }
+    .productCard > div > div:first-of-type > div > span:last-of-type, .productCard > div > div:last-of-type > div > div > span:last-of-type {
+      color: #AB3E70; }
+  .productCard > div > div:first-of-type > div:nth-child(even) div, .productCard > div > div:last-of-type > div > div:nth-child(even) div {
+    background-image: url("../tempImages/img1.jpg"); }
+  .productCard > div > div:first-of-type > div:nth-child(odd) div, .productCard > div > div:last-of-type > div > div:nth-child(odd) div {
+    background-image: url("../tempImages/img2.jpg"); }
+  .productCard > div > div:nth-of-type(2) {
+    width: 40%; }
+    .productCard > div > div:nth-of-type(2) h3 {
+      font-size: 18px; }
+    .productCard > div > div:nth-of-type(2) div {
+      overflow: hidden;
+      padding-bottom: 115%; }
+      .productCard > div > div:nth-of-type(2) div img {
+        position: absolute;
+        display: none;
+        border-radius: 12px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+        opacity: 0.8;
+        transition: top 1s ease, left 1s ease, width 0.5s ease, height 0.5s ease; }
+      .productCard > div > div:nth-of-type(2) div img:last-child {
+        display: block;
+        width: 75%;
+        height: auto;
+        left: 0;
+        top: 0;
+        opacity: 1; }
+      .productCard > div > div:nth-of-type(2) div img:nth-last-child(2) {
+        display: block;
+        width: 70%;
+        height: auto;
+        left: 13%;
+        top: 3%;
+        opacity: 1; }
+      .productCard > div > div:nth-of-type(2) div img:nth-last-child(3) {
+        display: block;
+        width: 65%;
+        height: auto;
+        left: 26%;
+        top: 6%; }
+      .productCard > div > div:nth-of-type(2) div img:nth-last-child(4) {
+        display: block;
+        width: 60%;
+        height: auto;
+        left: 39%;
+        top: 9%; }
+      .productCard > div > div:nth-of-type(2) div img:nth-last-child(5) {
+        display: block;
+        width: 60%;
+        height: auto;
+        left: 39%;
+        top: 9%; }
+    .productCard > div > div:nth-of-type(2) > span, .productCard > div > div:nth-of-type(2) a {
+      display: block;
+      height: 50px;
+      width: 160px;
+      margin: 10px;
+      float: left;
+      border: 1px solid grey;
+      border-radius: 25px;
+      font-size: 24px;
+      line-height: 2;
+      text-align: center;
+      color: grey; }
+    .productCard > div > div:nth-of-type(2) a {
+      width: 250px;
+      float: right;
+      border: none;
+      background-color: #ED2582;
+      color: #fff; }
+    @media only all and (max-width: 1180px) {
+      .productCard > div > div:nth-of-type(2) > span, .productCard > div > div:nth-of-type(2) a {
+        width: 230px;
+        float: none;
+        margin: 10px auto; } }
+  @media only all and (max-width: 1020px) {
+    .productCard > div > div:nth-of-type(2) {
+      width: 34%; } }
+  .productCard > div > div:nth-of-type(3) {
+    width: 200px;
+    margin: 0 2%;
+    border-radius: 20px;
+    background-color: #4F4F4F;
+    font-size: 17px;
+    color: #FFFFFF; }
+    .productCard > div > div:nth-of-type(3) div {
+      padding: 10px 20px;
+      border-bottom: 1px solid #262626; }
+      .productCard > div > div:nth-of-type(3) div p {
+        width: 100%;
+        line-height: 1.2; }
+        .productCard > div > div:nth-of-type(3) div p span {
+          position: absolute;
+          right: 0; }
+      .productCard > div > div:nth-of-type(3) div > span {
+        font-size: 13px;
+        line-height: 2; }
+    .productCard > div > div:nth-of-type(3) div:first-child {
+      background-color: #ED2582;
+      border-radius: 20px;
+      height: 40px;
+      border-bottom: none; }
+    .productCard > div > div:nth-of-type(3) div:last-child {
+      border-bottom: none; }
+
+.personal > div {
+  display: flex;
+  padding: 25px 50px 50px 50px;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .personal > div p.reverse {
+    width: 100%;
+    padding-bottom: 20px; }
+    .personal > div p.reverse a {
+      font-size: 16px;
+      color: #ED2582; }
+      .personal > div p.reverse a span {
+        font-size: 14px; }
+    .personal > div p.reverse a:last-child {
+      cursor: default; }
+  .personal > div h3 {
+    width: 100%;
+    padding-bottom: 20px;
+    font-size: 20px;
+    color: #AB3E70;
+    text-align: center;
+    text-transform: uppercase; }
+  .personal > div div {
+    width: 48%; }
+    .personal > div div h4 {
+      padding: 24px 0;
+      font-size: 14px;
+      color: #AB3E70;
+      text-transform: uppercase;
+      border-bottom: 1px solid #ED2582; }
+    .personal > div div form {
+      width: 100%;
+      padding: 20px 0;
+      border-bottom: 1px solid #D3D3D3; }
+      .personal > div div form p {
+        width: 35%;
+        margin: 5px 0;
+        float: left; }
+      .personal > div div form input {
+        height: 40px;
+        width: 65%;
+        margin: 5px 0;
+        float: right;
+        background: #F7F7F7;
+        border-radius: 20px;
+        box-shadow: inset 0 3px 20px rgba(0, 0, 0, 0.1);
+        font-size: 18px;
+        text-align: center;
+        color: #000; }
+      @media only all and (max-width: 1080px) {
+        .personal > div div form p, .personal > div div form input {
+          width: 50%; } }
+    .personal > div div p {
+      min-height: 40px;
+      margin: 10px 0;
+      font-size: 18px;
+      line-height: 2.1;
+      color: #696969; }
+  .personal > div div:nth-of-type(2) p {
+    width: 100%; }
+  .personal > div div:nth-of-type(2) p:first-of-type {
+    margin-top: 25px; }
+  .personal > div div:nth-of-type(2) a {
+    display: block;
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    float: left;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff; }
+  .personal > div div:nth-of-type(2) p:first-of-type a {
+    background-color: #4D76A1;
+    font-size: 26px;
+    line-height: 38px; }
+  .personal > div div:nth-of-type(2) p:nth-of-type(2) a {
+    background-color: #3B5998;
+    font-size: 28px;
+    line-height: 42px; }
+  .personal > div div:nth-of-type(2) p:nth-of-type(3) a {
+    background-color: #DC4E41;
+    font-size: 22px;
+    line-height: 41px; }
+  .personal > div div:nth-of-type(2) p:last-of-type a {
+    background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF);
+    font-size: 26px;
+    line-height: 38px; }
+  .personal > div div:nth-of-type(2) img {
+    display: none;
+    height: 16px;
+    width: 16px;
+    margin: 12px 0 12px 10px;
+    float: right;
+    cursor: pointer; }
+  .personal > div div:nth-of-type(2) .vis {
+    display: block; }
+  .personal > div div:last-of-type {
+    width: 100%;
+    margin: 35px 0; }
+    .personal > div div:last-of-type input[type='submit'] {
+      display: block;
+      height: 56px;
+      width: 260px;
+      margin: auto;
+      border-radius: 28px;
+      background-color: #ED2582;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #fff; }
+
+.basket > div, .history > div {
+  padding: 25px 50px 50px 50px; }
+  .basket > div p.reverse, .history > div p.reverse {
+    width: 100%;
+    padding-bottom: 20px; }
+    .basket > div p.reverse a, .history > div p.reverse a {
+      font-size: 16px;
+      color: #ED2582; }
+      .basket > div p.reverse a span, .history > div p.reverse a span {
+        font-size: 14px; }
+    .basket > div p.reverse a:last-child, .history > div p.reverse a:last-child {
+      cursor: default; }
+  .basket > div h3, .history > div h3 {
+    width: 100%;
+    padding-bottom: 24px;
+    font-size: 20px;
+    color: #AB3E70;
+    text-align: center;
+    text-transform: uppercase; }
+    .basket > div h3 span, .history > div h3 span {
+      font-weight: 700; }
+  .basket > div table, .history > div table {
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ED2582; }
+    .basket > div table tr:not(:first-of-type), .history > div table tr:not(:first-of-type) {
+      border-top: 1px solid #D3D3D3; }
+    .basket > div table th, .history > div table th {
+      font-size: 16px;
+      color: #AB3E70;
+      text-transform: uppercase;
+      padding: 10px 0; }
+    .basket > div table th:nth-child(2), .history > div table th:nth-child(2) {
+      padding-left: 20px;
+      text-align: left; }
+    .basket > div table th:last-child, .history > div table th:last-child {
+      text-align: right; }
+    .basket > div table td, .history > div table td {
+      padding: 10px 0;
+      vertical-align: top;
+      color: #696969; }
+    .basket > div table td:first-child, .history > div table td:first-child {
+      width: 150px; }
+      .basket > div table td:first-child div, .history > div table td:first-child div {
+        height: 150px;
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+        background: url("../tempImages/img3.jpg") no-repeat center center;
+        background-size: cover; }
+    .basket > div table td:nth-child(2), .history > div table td:nth-child(2) {
+      padding-left: 20px;
+      text-align: left; }
+      .basket > div table td:nth-child(2) h5, .history > div table td:nth-child(2) h5 {
+        margin-bottom: 25px;
+        font-size: 18px; }
+      .basket > div table td:nth-child(2) p:first-of-type, .history > div table td:nth-child(2) p:first-of-type {
+        margin-bottom: 25px;
+        font-size: 16px; }
+    .basket > div table td:nth-child(3), .history > div table td:nth-child(3) {
+      text-align: center; }
+      .basket > div table td:nth-child(3) span, .history > div table td:nth-child(3) span {
+        display: block;
+        width: 36px;
+        padding: 2px 5px;
+        border: 1px solid #ED2582;
+        border-radius: 6px;
+        font-size: 18px;
+        color: #AB3E70; }
+    .basket > div table td:last-child, .history > div table td:last-child {
+      min-width: 90px;
+      text-align: right; }
+      .basket > div table td:last-child p:first-child, .history > div table td:last-child p:first-child {
+        margin-bottom: 10px;
+        font-size: 18px;
+        color: #AB3E70; }
+      .basket > div table td:last-child p:nth-child(2), .history > div table td:last-child p:nth-child(2) {
+        margin-bottom: 50px;
+        font-size: 18px;
+        color: #D3D3D3;
+        text-decoration: line-through; }
+      .basket > div table td:last-child p:last-child, .history > div table td:last-child p:last-child {
+        font-size: 16px;
+        color: #AB3E70;
+        text-decoration: underline;
+        cursor: pointer; }
+        .basket > div table td:last-child p:last-child img, .history > div table td:last-child p:last-child img {
+          height: 16px;
+          width: auto;
+          padding-right: 5px;
+          cursor: pointer; }
+  .basket > div > div:last-of-type, .history > div > div:last-of-type {
+    width: 560px;
+    left: 100%;
+    padding: 0 30px 70px 0;
+    margin: 20px 0 20px -560px;
+    font-size: 24px;
+    color: #AB3E70;
+    text-transform: uppercase;
+    font-weight: 700; }
+    .basket > div > div:last-of-type h4, .history > div > div:last-of-type h4 {
+      width: 100%;
+      padding: 30px 0;
+      font-size: 18px;
+      color: #AB3E70;
+      text-transform: uppercase; }
+    .basket > div > div:last-of-type span, .history > div > div:last-of-type span {
+      font-weight: 700; }
+    .basket > div > div:last-of-type input[type='submit'], .basket > div > div:last-of-type a, .history > div > div:last-of-type input[type='submit'], .history > div > div:last-of-type a {
+      position: absolute;
+      display: block;
+      height: 56px;
+      width: 260px;
+      top: 62px;
+      right: 50px;
+      border-radius: 28px;
+      background-color: #ED2582;
+      font-size: 20px;
+      line-height: 2.8;
+      text-align: center;
+      text-transform: uppercase;
+      color: #fff; }
+    .basket > div > div:last-of-type a, .history > div > div:last-of-type a {
+      top: 130px; }
+
+/*# sourceMappingURL=desk.css.map */

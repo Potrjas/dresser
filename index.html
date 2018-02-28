@@ -1,0 +1,1938 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dresser</title>
+	<link rel="stylesheet" href="css/desk.css" media="only screen and (min-width: 800px)" />
+    <link rel="stylesheet" href="css/mob.css" media="only screen and (max-width: 799px)" />
+	<script src="js/jquery.js"></script>
+    <script src="js/nicescroll.js"></script>
+	<script src="js/joint.js"></script>
+</head>
+<body>
+    <div class="overlay"></div>
+    <div class="start">
+        <a class="startParam" href="" onclick="return false;">точный подбор параметров</a>
+        <a class="startReg" href="" onclick="return false;">регистрация / вход</a>
+        <span>
+            вход через:
+            <a class="fa" href="" onclick="return false;">&#xf189;</a>
+            <a class="fa" href="" onclick="return false;">&#xf09a;</a>
+            <a class="fa" href="" onclick="return false;">&#xf0d5;</a>
+            <a class="fa" href="" onclick="return false;">&#xf16d;</a>
+        </span>
+    </div>
+    <header>
+        <div>
+            <a class="tGrad" id="parameters" href="" onclick="return false;">
+                <img class="imgWh" src="images/togglesWhite.png" />
+                <img class="imgGr" src="images/togglesGrad.png" />
+                параметры
+            </a>
+            <div class="sort">
+                <a class="act" href="" onclick="return false;">новинки</a>
+                <a href="" onclick="return false;">хиты продаж</a>
+                <a href="" onclick="return false;">скидка</a>
+                <a href="" onclick="return false;">
+                    цена
+                    <span class="fa invis">&#xf106;</span>
+                    <span class="fa">&#xf107;</span>
+                </a>
+            </div>
+            <a id="basket" href="" onclick="return false;">
+                <img class="imgWh" src="images/basketWh.png" />
+                <img class="imgGr" src="images/basketGr.png" />
+                <span>23</span>
+            </a>
+            <a class="tGrad" id="menu" href="" onclick="return false;">
+                меню
+                <img class="imgWh" src="images/listWhite.png" />
+                <img class="imgGr" src="images/listGrad.png" />
+                <span>
+                    <img src="images/closeGrad.png" />
+                </span>
+            </a>
+            <div class="menu">
+                <span>
+                    <a class="startReg" href="" onclick="return false;">вход / регистрация</a>
+                    <a class="openPersonal" href="" onclick="return false;">личный кабинет</a>
+                    <a class="openHistory" href="" onclick="return false;">мои заказы</a>
+                </span>
+                <a class="suit" href="" onclick="return false;">костюмы</a>
+                <a class="jacket" href="" onclick="return false;">пиджаки</a>
+                <a class="shirt" href="" onclick="return false;">рубашки</a>
+                <a class="trousers" href="" onclick="return false;">брюки</a>
+                <a class="pullover" href="" onclick="return false;">свитера</a>
+                <a class="coat" href="" onclick="return false;">верхняя одежда</a>
+                <a class="shoes" href="" onclick="return false;">обувь</a>
+                <a class="accessories" href="" onclick="return false;">аксессуары</a>
+                <a class="sale" href="" onclick="return false;">SALE</a>
+            </div>
+        </div>
+    </header>
+    <main class="parameters">
+        <div>
+            <div>
+                <h2>Введите базовые параменты</h2>
+                <div>
+                    <h3>Рост</h3>
+                    <img src="images/scGrowth.png" />
+                    <P>
+                        <input type="text" value="" maxlength="3" />
+                        cm
+                    </P>
+                    <hr /><hr />
+                    <input type="range" min="155" max="198" value="180" />
+                </div>
+                <div>
+                    <h3>Обхват груди</h3>
+                    <img src="images/scChest.png" />
+                    <P>
+                        <input type="text" value="" maxlength="3" />
+                        cm
+                    </P>
+                    <hr /><hr />
+                    <input type="range" min="85" max="140" value="106" />
+                </div>
+                <div>
+                    <h3>Обхват талии</h3>
+                    <img src="images/scWaist.png" />
+                    <P>
+                        <input type="text" value="" maxlength="3" />
+                        cm
+                    </P>
+                    <hr /><hr />
+                    <input type="range" min="72" max="140" value="95" />
+                </div>
+                <h2>дополнительные параменты</h2>
+                <div>
+                    <h3>Ворот</h3>
+                    <img src="images/scGrowth.png" />
+                    <P>
+                        <input type="text" value="" maxlength="3" />
+                        cm
+                    </P>
+                    <hr /><hr />
+                    <input type="range" min="37" max="52" value="40" />
+                </div>
+                <div>
+                    <h3>Длина руки</h3>
+                    <img src="images/scGrowth.png" />
+                    <P>
+                        <input type="text" value="" maxlength="3" />
+                        cm
+                    </P>
+                    <hr /><hr />
+                    <input type="range" min="58" max="75" value="73" />
+                </div>
+                <div>
+                    <h3>Длина брючин</h3>
+                    <img src="images/scGrowth.png" />
+                    <P>
+                        <input type="text" value="" maxlength="3" />
+                        cm
+                    </P>
+                    <hr /><hr />
+                    <input type="range" min="95" max="120" value="110" />
+                </div>
+                <div>
+                    <h3>Бицепс</h3>
+                    <img src="images/scGrowth.png" />
+                    <P>
+                        <input type="text" value="" maxlength="3" />
+                        cm
+                    </P>
+                    <hr /><hr />
+                    <input type="range" min="28" max="60" value="40" />
+                </div>
+                <div>
+                    <h3>Бедра</h3>
+                    <img src="images/scGrowth.png" />
+                    <P>
+                        <input type="text" value="" maxlength="3" />
+                        cm
+                    </P>
+                    <hr /><hr />
+                    <input type="range" min="88" max="150" value="105" />
+                </div>
+                <div>
+                    <h3>Длина стопы</h3>
+                    <img src="images/scGrowth.png" />
+                    <P>
+                        <input type="text" value="" maxlength="3" />
+                        cm
+                    </P>
+                    <hr /><hr />
+                    <input type="range" min="25" max="45" value="30" />
+                </div>
+                <div></div>
+                <span></span>
+            </div>
+            <div>
+                <h2>телосложение</h2>
+                <img src="images/silhouette.png" />
+            </div>
+            <aside>
+                <a class="suit" href="" onclick="return false;">
+                    <img src="images/icoGrSuit.png" />
+                    <img src="images/icoWhSuit.png" />
+                    <span>13</span>
+                </a>
+                <a class="jacket" href="" onclick="return false;">
+                    <img src="images/icoGrJacket.png" />
+                    <img src="images/icoWhJacket.png" />
+                    <span>7</span>
+                </a>
+                <a class="shirt" href="" onclick="return false;">
+                    <img src="images/icoGrShirt.png" />
+                    <img src="images/icoWhShirt.png" />
+                    <span>11</span>
+                </a>
+                <a class="trousers" href="" onclick="return false;">
+                    <img src="images/icoGrTrousers.png" />
+                    <img src="images/icoWhTrousers.png" />
+                    <span>23</span>
+                </a>
+                <a class="pullover" href="" onclick="return false;">
+                    <img src="images/icoGrPullover.png" />
+                    <img src="images/icoWhPullover.png" />
+                    <span>9</span>
+                </a>
+                <a class="coat" href="" onclick="return false;">
+                    <img src="images/icoGrCoat.png" />
+                    <img src="images/icoWhCoat.png" />
+                    <span>2</span>
+                </a>
+            </aside>
+        </div>
+    </main>
+    <main class="catalog">
+        <div>
+            <aside>
+                <a class="suit" href="" onclick="return false;">
+                    <img src="images/icoGrSuit.png" />
+                    <img src="images/icoWhSuit.png" />
+                    <span>13</span>
+                </a>
+                <a class="jacket" href="" onclick="return false;">
+                    <img src="images/icoGrJacket.png" />
+                    <img src="images/icoWhJacket.png" />
+                    <span>7</span>
+                </a>
+                <a class="shirt" href="" onclick="return false;">
+                    <img src="images/icoGrShirt.png" />
+                    <img src="images/icoWhShirt.png" />
+                    <span>11</span>
+                </a>
+                <a class="trousers" href="" onclick="return false;">
+                    <img src="images/icoGrTrousers.png" />
+                    <img src="images/icoWhTrousers.png" />
+                    <span>23</span>
+                </a>
+                <a class="pullover" href="" onclick="return false;">
+                    <img src="images/icoGrPullover.png" />
+                    <img src="images/icoWhPullover.png" />
+                    <span>9</span>
+                </a>
+                <a class="coat" href="" onclick="return false;">
+                    <img src="images/icoGrCoat.png" />
+                    <img src="images/icoWhCoat.png" />
+                    <span>2</span>
+                </a>
+            </aside>
+            <section class="suit">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a href="" onclick="return false;">Костюмы</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </section>
+            <section class="jacket">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a href="" onclick="return false;">Пиджаки</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </section>
+            <section class="shirt">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a href="" onclick="return false;">Рубашки</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </section>
+            <section class="trousers">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a href="" onclick="return false;">Брюки</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </section>
+            <section class="pullover">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a href="" onclick="return false;">Свитера</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </section>
+            <section class="coat">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a href="" onclick="return false;">Верхняя одежда</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </section>
+            <section class="shoes">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a href="" onclick="return false;">Свитера</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </section>
+            <section class="accessories">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a href="" onclick="return false;">Аксессуары</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </section>
+            <section class="sale">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a href="" onclick="return false;">SALE</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </section>
+        </div>
+    </main>
+    <main class="productCard">
+        <div>
+            <div class="nsFirst">
+                <p class="reverse">
+                    <a class="home" href="" onclick="return false;">
+                        Главная
+                        <span class="fa">&#xf105;</span>
+                    </a>
+                    <a class="coat" href="" onclick="return false;">Верхняя одежда</a>
+                </p>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+                <div>
+                    <div>
+                        <span></span>
+                    </div>
+                    <h4>пальто мужское dante черное</h4>
+                    <span>3335 грн</span>
+                    &#8195;
+                    <span>2229 грн</span>
+                </div>
+            </div>
+            <div>
+                <h3>КУРТКА МУЖСКАЯ ДЕМИСЕЗОННАЯ С ПРЯЖКОЙ</h3>
+                <div  class="slider">
+                    <img class="slide" src="tempImages/img1.jpg" />
+                    <img class="slide" src="tempImages/img2.jpg" />
+                    <img class="slide" src="tempImages/img3.jpg" />
+                    <img class="slide" src="tempImages/img1.jpg" />
+                    <img class="slide" src="tempImages/img2.jpg" />
+                    <img class="slide" src="tempImages/img3.jpg" />
+                </div>
+                <span>3560 грн</span>
+                <a class="toBasket" href="" onclick="return false;">
+                    в корзину
+                    <span class="fa">&#xf07a;</span>
+                </a>
+                <a class="back" href="" onclick="return false;">
+                    <span class="fa">&#xf104;&#8195;</span>
+                    назад
+                </a>
+            </div>
+            <div>
+                <div>
+                    <p>
+                        Хорошо сидит
+                        <span>98%</span>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Рост
+                        <span>98%</span>
+                    </p>
+                    <span>подходит идеально</span>
+                </div>
+                <div>
+                    <p>
+                        Обхват груди
+                        <span>98%</span>
+                    </p>
+                    <span>подходит идеально</span>
+                </div>
+                <div>
+                    <p>
+                        Обхват талии
+                        <span>100%</span>
+                    </p>
+                    <span>подходит идеально</span>
+                </div>
+                <div>
+                    <p>
+                        Ворот
+                        <span>98%</span>
+                    </p>
+                    <span>подходит идеально</span>
+                </div>
+                <div>
+                    <p>
+                        Длина руки
+                        <span>100%</span>
+                    </p>
+                    <span>подходит идеально</span>
+                </div>
+                <div>
+                    <p>
+                        Длина брючин
+                        <span>98%</span>
+                    </p>
+                    <span>подходит идеально</span>
+                </div>
+                <div>
+                    <p>
+                        Бицепс
+                        <span>98%</span>
+                    </p>
+                    <span>подходит идеально</span>
+                </div>
+                <div>
+                    <p>
+                        Бедра
+                        <span>98%</span>
+                    </p>
+                    <span>подходит идеально</span>
+                </div>
+                <div>
+                    <p>
+                        Длина стопы
+                        <span>98%</span>
+                    </p>
+                    <span>подходит идеально</span>
+                </div>
+            </div>
+            <div class="nsLast">
+                <h3>
+                    с этим товаром примеряют
+                </h3>
+                <div>
+                    <h3>Пиджаки</h3>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>Брюки</h3>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>костюмы</h3>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>рубашки</h3>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                </div>
+                <div>
+                    <h3>свитера</h3>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                    <div>
+                        <div>
+                            <span></span>
+                        </div>
+                        <h4>пальто мужское dante черное</h4>
+                        <span>3335 грн</span>
+                        &#8195;
+                        <span>2229 грн</span>
+                    </div>
+                </div>
+            </div>
+            <hr class="clear" />
+        </div>
+    </main>
+    <main class="personal">
+        <div>
+            <p class="reverse">
+                <a class="home" href="" onclick="return false;">
+                    Главная
+                    <span class="fa">&#xf105;</span>
+                </a>
+                <a href="" onclick="return false;">Личный кабинет</a>
+            </p>
+            <h3>
+                личный кабинет
+            </h3>
+            <div>
+                <h4>профиль</h4>
+                <form id="personal">
+                    <p>ФИО</p>
+                    <input type="text" placeholder="Ф.И.О.">
+                    <p>Email*</p>
+                    <input type="email" placeholder="Email">
+                    <p>Телефон*</p>
+                    <input type="tel" placeholder="Телефон">
+                    <br class="clear" />
+                </form>
+                <h4>смена пароля</h4>
+                <form id="password">
+                    <p>Новый пароль*</p>
+                    <input type="password" placeholder="******">
+                    <p>Повторите пароль*</p>
+                    <input type="password" placeholder="******">
+                    <br class="clear" />
+                </form>
+            </div>
+            <div>
+                <h4>социальные профили</h4>
+                <p>
+                    <a class="fa" href="" onclick="return false;">&#xf189;</a>
+                    <span>задать профиль</span>
+                    <img src="images/closeGrad.png" />
+                </p>
+                <p>
+                    <a class="fa" href="" onclick="return false;">&#xf09a;</a>
+                    <span>задать профиль</span>
+                    <img src="images/closeGrad.png" />
+                </p>
+                <p>
+                    <a class="fa" href="" onclick="return false;">&#xf0d5;</a>
+                    <span>https://plus.google.com/109198028694825093495</span>
+                    <img class="vis" src="images/closeGrad.png" />
+                </p>
+                <p>
+                    <a class="fa" href="" onclick="return false;">&#xf16d;</a>
+                    <span>задать профиль</span>
+                    <img src="images/closeGrad.png" />
+                </p>
+                <br class="clear" />
+            </div>
+            <div>
+                <input type="submit" value="сохранить" onclick="return false;">
+            </div>
+        </div>
+    </main>
+    <main class="basket">
+        <div>
+            <p class="reverse">
+                <a class="home" href="" onclick="return false;">
+                    Главная
+                    <span class="fa">&#xf105;</span>
+                </a>
+                <a href="" onclick="return false;">Корзина</a>
+            </p>
+            <h3>
+                Корзина
+            </h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>наименование</th>
+                    <th>количество</th>
+                    <th>цена</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div></div>
+                    </td>
+                    <td>
+                        <h5>ПАЛЬТО МУЖСКОЕ DANTE ЧЕРНОЕ</h5>
+                        <p>TMR 169/A3082/L097</p>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <p>1603 грн</p>
+                        <p>2290 грн</p>
+                        <p class="del">
+                            <img src="images/closeGrad.png" />
+                            Удалить
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div></div>
+                     </td>
+                    <td>
+                        <h5>ПАЛЬТО МУЖСКОЕ DANTE ЧЕРНОЕ</h5>
+                        <p>TMR 169/A3082/L097</p>
+                    </td>
+                    <td>
+                        <span>21</span>
+                    </td>
+                    <td>
+                        <p>3206 грн</p>
+                        <p>4580 грн</p>
+                        <p class="del">
+                            <img src="images/closeGrad.png" />
+                            Удалить
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <div>
+                <h4>
+                    <span>доставка:</span>
+                    по тарифам перевозчика
+                </h4>
+                <span>итого 6548 грн</span>
+                <input type="submit" value="оформить заказ" onclick="return false;">
+                <a class="back" href="" onclick="return false;">
+                    <span class="fa">&#xf104;&#8195;</span>
+                    назад
+                </a>
+            </div>
+        </div>
+    </main>
+    <main class="history">
+        <div>
+            <p class="reverse">
+                <a class="home" href="" onclick="return false;">
+                    Главная
+                    <span class="fa">&#xf105;</span>
+                </a>
+                <a href="" onclick="return false;">История покупок</a>
+            </p>
+            <h3>
+                История покупок
+            </h3>
+            <table>
+                <tr>
+                    <th></th>
+                    <th>наименование</th>
+                    <th>количество</th>
+                    <th>цена</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div></div>
+                    </td>
+                    <td>
+                        <h5>ПАЛЬТО МУЖСКОЕ DANTE ЧЕРНОЕ</h5>
+                        <p>TMR 169/A3082/L097</p>
+                    </td>
+                    <td>
+                        <span>1</span>
+                    </td>
+                    <td>
+                        <p>1603 грн</p>
+                        <p>2290 грн</p>
+                        <p class="del">
+                            <img src="images/closeGrad.png" />
+                            Удалить
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div></div>
+                    </td>
+                    <td>
+                        <h5>ПАЛЬТО МУЖСКОЕ DANTE ЧЕРНОЕ</h5>
+                        <p>TMR 169/A3082/L097</p>
+                    </td>
+                    <td>
+                        <span>21</span>
+                    </td>
+                    <td>
+                        <p>3206 грн</p>
+                        <p>4580 грн</p>
+                        <p class="del">
+                            <img src="images/closeGrad.png" />
+                            Удалить
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <div class="reg">
+        <h2>Персональные данные</h2>
+        <p>для сохранения персональных данных войдите или зарегистрируйтесь</p>
+        <form id="enter">
+            <input type="text" placeholder="Ф.И.О.">
+            <input type="text" placeholder="Телефон/Email">
+            <input type="password" placeholder="Пароль">
+            <input type="submit" value="вход" onclick="return false;">
+            <a href="" onclick="return false;">регистрация</a>
+        </form>
+        <form id="reg">
+            <input type="text" placeholder="Ф.И.О.">
+            <input type="text" placeholder="Телефон/Email">
+            <input type="password" placeholder="Пароль">
+            <input type="password" placeholder="Повторить пароль">
+            <input type="submit" value="регистрация" onclick="return false;">
+            <a href="" onclick="return false;">вход</a>
+        </form>
+    </div>
+</body>
+</html>

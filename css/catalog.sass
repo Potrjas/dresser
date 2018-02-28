@@ -1,0 +1,54 @@
+.catalog > div
+	padding: 25px 0 50px 50px
+	p.reverse
+		width: 100%
+		padding-bottom: 20px
+		a
+			font-size: 16px
+			color: $red
+			span
+				font-size: 14px
+		a:last-child
+			cursor: default
+	section
+		display: flex
+		width: calc(100% - 130px)
+		flex-wrap: wrap
+		justify-content: flex-start
+		> div
+			width: 16%
+			margin: 25px 40px 25px 0
+			font-size: 13px
+			text-transform: uppercase
+			div
+				height: 0
+				width: 100%
+				padding-bottom: 150%
+				border-radius: 12px
+				background: no-repeat center center
+				background-size: cover
+				span
+					display: none
+					width: 100%
+					padding-bottom: 150%
+					background: url("../images/hanger.png") no-repeat center center
+					background-size: 40px auto
+					cursor: pointer
+			div:hover span
+				display: block
+			h4
+				padding: 10px 0 4px
+				color: $grey
+				line-height: 1.2
+			> span
+				width: 50%
+			> span:first-of-type
+				color: $lightGray
+				text-decoration: line-through
+			> span:last-of-type
+				color: $plum
+		//BackgroundImages
+		> div:nth-child(even) div
+			background-image: url("../tempImages/img1.jpg")
+		> div:nth-child(odd) div
+			background-image: url("../tempImages/img2.jpg")

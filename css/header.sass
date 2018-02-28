@@ -1,0 +1,150 @@
+header
+	background: radial-gradient(80px at 50% 25%, #FFFFFF 0%, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 0%, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%), #F2F2F2
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
+	> div
+		display: flex
+		justify-content: space-between
+		background: url("../images/logoMin.png") no-repeat center 20px
+		background-size: 32px auto
+		> a
+			height: 60px
+			margin: 15px 0
+			padding: 22px
+			border-radius: 30px
+			font-family: LatoBold, sans-serif
+			font-size: 16px
+			white-space: nowrap
+			text-transform: uppercase
+			color: #fff
+			img
+				display: inline-block
+				padding: 0 10px
+				vertical-align: top
+		.tGrad
+			background: linear-gradient(45deg, $blue -10%, $red 80%)
+			-webkit-background-clip: text
+			-webkit-text-fill-color: transparent
+			.imgWh
+				display: none
+		.tGrad:hover
+			background: linear-gradient(15deg, $blue -50%, $red 100%)
+			box-shadow: 0 6px 12px rgba(205, 50, 150, 0.4)
+			-webkit-background-clip: border-box
+			-webkit-text-fill-color: #fff
+			.imgWh
+				display: inline-block
+			.imgGr
+				display: none
+		.aGrad
+			background: linear-gradient(15deg, $blue -50%, $red 100%)
+			box-shadow: 0 6px 12px rgba(205, 50, 150, 0.4)
+			cursor: default
+			.imgGr
+				display: none
+			.imgWh
+				cursor: default
+		#parameters
+			left: -30px
+			padding-left: 60px
+			text-align: right
+		#menu
+			right: -30px
+			margin-left: 40px
+			padding-right: 60px
+			transition: all 0.3s ease
+			span
+				position: absolute
+				display: none
+				height: 60px
+				width: 100px
+				top: 0
+				border-radius: 30px
+				border: 1px solid $lightGray
+				right: -110px
+				text-align: center
+				img
+					height: 20px
+					width: auto
+					top: 20px
+					right: 20px
+		#basket
+			position: absolute
+			width: 60px
+			right: 160px
+			padding: 18px 14px
+			span
+				position: absolute
+				display: block
+				height: 25px
+				width: 25px
+				top: 5px
+				left: 30px
+				border-radius: 50%
+				background-color: $red
+				font-size: 12px
+				line-height: 2
+				color: #fff
+				text-align: center
+			img
+				width: 30px
+				padding: 0
+			.imgWh
+				display: none
+		#basket:hover
+			background-color: $red
+			span
+				background-color: transparent!important
+			.imgGr
+				display: none
+			.imgWh
+				display: block
+		.sort
+			display: flex
+			max-width: 500px
+			height: 30px
+			justify-content: space-between
+			flex-grow: 1
+			align-self: flex-end
+			a
+				height: 100%
+				font-size: 14px
+				color: $unPlum
+				text-transform: uppercase
+			a.act, a:hover:not(:last-child)
+				color: $red
+				border-bottom: 2px solid $red
+			a:last-child
+				color: $plum
+				span
+					font-size: 20px
+					line-height: 0
+				.invis
+					display: none
+		.menu
+			position: absolute
+			display: none
+			width: 280px
+			top: 100px
+			right: -12px
+			border-radius: 12px
+			padding: 0 50px 20px 0
+			background-color: #F7F7F7
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3)
+			z-index: 10
+			font-size: 21px
+			line-height: 1.5
+			span
+				display: block
+				padding-bottom: 24px
+				border-bottom: 1px solid $lightGray
+				a
+					background: linear-gradient(45deg, $blue -10%, $red 80%)
+					-webkit-background-clip: text
+					-webkit-text-fill-color: transparent
+			a
+				display: block
+				padding-top: 20px
+				color: $grey
+				text-align: right
+			a.act, a:hover
+				text-decoration: underline $red
