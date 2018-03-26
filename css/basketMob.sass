@@ -1,0 +1,121 @@
+.basket > div, .history > div
+	padding: 20px 10px 70px
+	table
+		width: 100%
+		padding-bottom: 20px
+		tr:first-child
+			display: none
+		tr
+			border-bottom: 1px solid $lightGray
+		td
+			padding: 20px 0
+			vertical-align: top
+			color: $grey
+		td:first-child
+			width: 150px
+			div
+				height: 150px
+				width: 100%
+				border-radius: 12px
+				box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3)
+				background: url("../tempImages/img3.jpg") no-repeat center center
+				background-size: cover
+
+			a.del
+				display: block
+				width: 100%
+				height: 44px
+				border: 1px solid $grey
+				border-radius: 22px
+				margin-top: 20px
+				text-align: center
+				line-height: 2.6
+				text-transform: uppercase
+				background: linear-gradient(45deg, $blue -10%, $red 80%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+				img
+					height: 40%
+					top: 30%
+					float: right
+					padding-right: 15px
+		@media only all and (max-width: 360px)
+			td:first-child
+				width: 80px
+				a.del
+					font-size: 0
+					img
+						float: none
+						padding: 0
+		td:nth-child(2)
+			padding-left: 20px
+			text-align: left
+			a
+				position: absolute
+				display: block
+				width: 166px
+				right: 0
+				height: 44px
+				border: 1px solid $grey
+				border-radius: 22px
+				bottom: 20px
+				margin: 0 15px
+				text-align: center
+				line-height: 2.6
+				text-transform: uppercase
+				background: linear-gradient(45deg, $blue -10%, $red 80%)
+				-webkit-background-clip: text
+				-webkit-text-fill-color: transparent
+			h5
+				margin-bottom: 15px
+				font-size: 18px
+			p:first-of-type
+				margin-bottom: 15px
+				font-size: 16px
+			p.price
+				text-transform: uppercase
+				>span
+					white-space: nowrap
+					display: inline-block
+				> span:first-of-type
+					color: $lightGray
+					text-decoration: line-through
+				> span:last-of-type
+					color: $plum
+		td:nth-child(3), td:last-child
+			display: none
+	> div
+		width: 100%
+		padding: 44px 15px
+		background: #FFFFFF
+		border: 1px solid #F0F0F0
+		box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.3)
+		border-radius: 12px
+		color: #AB3E70
+		text-transform: uppercase
+		h4, a
+			display: none
+		input[type='submit']
+			height: 44px
+			top: -14px
+			padding: 0 10px
+			float: right
+			border-radius: 22px
+			background-color: $red
+			color: #fff
+			text-transform: uppercase
+	@media only all and (max-width: 360px)
+		> div
+			text-align: center
+			input[type='submit']
+				display: block
+				top: 14px
+				float: none
+				margin: auto
+
+
+
+
+
+
+

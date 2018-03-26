@@ -1,0 +1,55 @@
+.catalog > div
+	padding: 20px 10px 70px
+	p.reverse
+		text-align: center
+		a:first-child
+			display: none
+	section
+		display: flex
+		width: 100%
+		flex-wrap: wrap
+		justify-content: space-between
+		padding-bottom: 70px
+		> div
+			width: 30%
+			margin: 5px
+			font-size: 12px
+			text-transform: uppercase
+			div
+				height: 0
+				width: 100%
+				padding-bottom: 100%
+				border-radius: 12px
+				background: no-repeat center center
+				background-size: cover
+				span
+					display: none
+					width: 100%
+					padding-bottom: 100%
+					background: url("../images/hanger.png") no-repeat center center
+					background-size: 40px auto
+					cursor: pointer
+			div:hover span
+				display: block
+			h4
+				padding: 10px 0 4px
+				color: $grey
+				line-height: 1.2
+			> span
+				display: inline-block
+			> span:first-of-type
+				color: $lightGray
+				text-decoration: line-through
+			> span:last-of-type
+				color: $plum
+		@media only all and (max-width: 320px)
+			> div
+				width: 46%
+		@media only all and (min-width: 500px)
+			> div
+				width: 22%
+		//BackgroundImages
+		> div:nth-child(even) div
+			background-image: url("../tempImages/img1.jpg")
+		> div:nth-child(odd) div
+			background-image: url("../tempImages/img2.jpg")

@@ -1,0 +1,54 @@
+.start
+	display: none
+	position: absolute
+	height: 100vh
+	min-height: 600px
+	width: 100%
+	background: url("../images/logo.png") no-repeat center 40px, url("../images/overlay.jpg") no-repeat center center
+	background-size: auto, cover
+	z-index: 2
+	> a, span
+		display: block
+		height: 50px
+		width: 280px
+		top: 200px
+		margin: 35px auto
+		border-radius: 25px
+		font-size: 14px
+		line-height: 3.5
+		text-align: center
+		text-transform: uppercase
+		color: #fff
+	> a:first-of-type
+		border: 2px solid #fff
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2)
+	> a:last-of-type
+		background: linear-gradient(15deg, $blue -50%, $red 100%)
+		box-shadow: 0 5px 10px rgba(205, 50, 150, 0.4)
+	span
+		display: flex
+		justify-content: space-between
+		font-size: 0
+		a
+			display: block
+			height: 50px
+			width: 50px
+			border-radius: 50%
+			vertical-align: bottom
+		a:first-child
+			background-color: #4D76A1
+			font-size: 30px
+			line-height: 48px
+		a:nth-child(2)
+			background-color: #3B5998
+			font-size: 34px
+			line-height: 52px
+		a:nth-child(3)
+			background-color: #DC4E41
+			font-size: 24px
+			line-height: 50px
+		a:last-child
+			background: radial-gradient(circle at 33% 100%, #FED373 4%, #F15245 30%, #D92E7F 62%, #9B36B7 85%, #515ECF)
+			font-size: 30px
+			line-height: 48px
+			margin-right: 10px

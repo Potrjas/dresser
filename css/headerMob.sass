@@ -1,0 +1,108 @@
+header
+	position: fixed
+	width: 100%
+	bottom: 0
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
+	z-index: 1
+	> div
+		display: flex
+		justify-content: space-around
+		background-color: #fff
+		> a
+			height: 60px
+			width: 60px
+			border-top-left-radius: 30px
+			border-top-right-radius: 30px
+			margin-top: 10px
+			font-size: 0
+			text-align: center
+			img
+				height: 16px
+				margin-top: 20px
+			.imgWh
+				display: none
+		> a:nth-of-type(2) img,> a:nth-of-type(3) img
+			height: 20px
+		> a:hover
+			background: linear-gradient(15deg, $blue -50%, $red 100%)
+			box-shadow: 0 6px 12px rgba(205, 50, 150, 0.4)
+			.imgWh
+				display: inline
+			.imgGr
+				display: none
+		.aGrad
+			background: linear-gradient(15deg, $blue -50%, $red 100%)
+			box-shadow: 0 6px 12px rgba(205, 50, 150, 0.4)
+			cursor: default
+			.imgGr
+				display: none
+			.imgWh
+				display: inline
+				cursor: default
+		.sort
+			position: absolute
+			display: flex
+			width: 100%
+			max-width: 500px
+			height: 40px
+			top: -40px
+			padding: 0 20px
+			justify-content: space-between
+			line-height: 3.5
+			background-color: #fff
+			a
+				height: 100%
+				font-size: 12px
+				color: $unPlum
+				text-transform: uppercase
+			a.act, a:hover:not(:last-child)
+				color: $red
+				border-bottom: 2px solid $red
+			a:last-child
+				color: $plum
+				span
+					font-size: 20px
+					line-height: 0
+				.invis
+					display: none
+		.menu
+			position: absolute
+			display: none
+			width: 100%
+			bottom: 70px
+			padding-bottom: 10px
+			border-top-left-radius: 12px
+			border-top-right-radius: 12px
+			background-color: #F7F7F7
+			box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3)
+			font-size: 21px
+			line-height: 1.5
+			z-index: 10
+			span
+				display: none
+				padding: 20px 0 50px
+				a
+					display: block
+					height: 40px
+					width: 240px
+					left: 50%
+					margin-top: 15px
+					margin-left: -120px
+					border-radius: 20px
+					border: 1px solid $grey
+					background: linear-gradient(45deg, $blue -10%, $red 80%)
+					text-align: center
+					-webkit-background-clip: text
+					-webkit-text-fill-color: transparent
+			> a
+				display: none
+				padding-top: 10px
+				color: $grey
+				text-align: center
+				margin-right: 24px
+				img
+					opacity: 0
+					height: 30px
+					width: auto
+			> a.act img, > a:hover img
+					opacity: 1

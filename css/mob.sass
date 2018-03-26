@@ -2,6 +2,7 @@
 @font-face
 	font-family: FontAwesome
 	src: url(../fonts/FontAwesome.otf)
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i')
 //RESET
 *
 	position: relative
@@ -20,8 +21,8 @@
 	box-shadow: none
 	box-sizing: border-box
 	cursor: default
-a, a *, button,
-input[type='button'], input[type='submit'], input[type='reset']
+a, a *, button, input[type='range'], input[type='button'],
+input[type='submit'], input[type='reset']
 	cursor: pointer
 input
 	cursor: text
@@ -32,9 +33,10 @@ footer, header, hgroup, menu, nav, section
 	display: block
 html, body
 	height: 100%
-	min-height: 100vh
 	font-size: 100%
 	line-height: 1
+	font-family: 'Lato', sans-serif
+	overflow-x: hidden
 //TEXT SELECTION
 *::-moz-selection
 	background-color: inherit
@@ -42,27 +44,58 @@ html, body
 *::selection
 	background-color: inherit
 	color: inherit
+//VARIABLES
+$plum: #AB3E70
+$red: #ED2582
+$unPlum: #AB8798
+$blue: #465EE0
+$lightGray: #D3D3D3
+$grey: #696969
+$darkGrey: #4F4F4F
 //JOINT
 .clear
+	display: block
+	width: 100%
+	height: 0
 	clear: both
 .pd, .pd *
-	cursor: default
+	cursor: default !important
 .fa
 	font-family: FontAwesome, sans-serif
 .overlay
 	display: none
-	position: absolute
+	position: fixed
 	height: 100%
-	width: 100%
+	width: 100% !important
 	top: 0
 	left: 0
-	z-index: 1
-
-
-
-@media only all and (max-width: 0px)
-селектор
-	свойство: значение
-@media only all and (min-width: 9999px)
-селектор
-	свойство: значение
+	z-index: 10
+	background-color: rgba(0, 0, 0, 0.5)
+aside
+	display: none
+.wrapper *
+	filter: blur(0)
+.nicescroll-rails
+	display: none !important
+p.reverse
+	width: 100%
+	padding-bottom: 20px
+	color: $plum
+	font-size: 14px
+	text-transform: uppercase
+	span
+		font-size: 20px
+		top: 2px
+	a:last-child
+		cursor: default
+h3
+	display: none
+//IMPORT
+@import 'startMob'
+@import 'regMob'
+@import 'headerMob'
+@import 'parametersMob'
+@import 'catalogMob'
+@import 'productCardMob'
+@import 'basketMob'
+@import 'personalMob'

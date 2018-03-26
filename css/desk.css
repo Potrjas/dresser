@@ -1,9 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i");
 @font-face {
   font-family: FontAwesome;
   src: url(../fonts/FontAwesome.otf); }
-@font-face {
-  font-family: LatoRegular;
-  src: url(../fonts/LatoRegular.ttf); }
 * {
   position: relative;
   margin: 0;
@@ -40,7 +38,7 @@ html, body {
   height: 100%;
   font-size: 100%;
   line-height: 1;
-  font-family: LatoRegular, sans-serif;
+  font-family: "Lato", sans-serif;
   overflow-x: hidden; }
 
 *::-moz-selection {
@@ -73,10 +71,13 @@ html, body {
   z-index: 10;
   background-color: rgba(0, 0, 0, 0.5); }
 
-main {
+.overlayInt {
+  display: none !important; }
+
+.wrapper {
   overflow-x: hidden; }
 
-header > div, main > div {
+header > div, .wrapper > div {
   width: 100%;
   max-width: 1440px;
   margin: auto; }
@@ -186,6 +187,8 @@ header {
       left: -30px;
       padding-left: 60px;
       text-align: right; }
+    header > div #hanger {
+      display: none; }
     header > div #menu {
       right: -30px;
       margin-left: 40px;
@@ -285,6 +288,8 @@ header {
         padding-top: 20px;
         color: #696969;
         text-align: right; }
+        header > div .menu a img {
+          display: none; }
       header > div .menu a.act, header > div .menu a:hover {
         text-decoration: underline #ED2582; }
 
@@ -293,6 +298,8 @@ header {
   padding: 50px 0 50px 50px;
   flex-wrap: wrap;
   justify-content: space-between; }
+  .parameters > div > a {
+    display: none; }
   .parameters > div > div {
     border-radius: 12px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3); }
@@ -450,7 +457,7 @@ header {
     .catalog > div section > div:nth-child(odd) div {
       background-image: url("../tempImages/img2.jpg"); }
 
-main aside {
+.wrapper aside {
   border-radius: 12px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
   display: flex;
@@ -459,7 +466,7 @@ main aside {
   flex-direction: column;
   justify-content: space-around;
   align-items: center; }
-  main aside a {
+  .wrapper aside a {
     display: block;
     height: 70px;
     width: 90%;
@@ -468,13 +475,13 @@ main aside {
     border-top-left-radius: 35px;
     border-bottom-left-radius: 35px;
     text-align: center; }
-    main aside a img {
+    .wrapper aside a img {
       height: 50px;
       width: auto;
       top: 10px; }
-    main aside a img:last-of-type {
+    .wrapper aside a img:last-of-type {
       display: none; }
-    main aside a span {
+    .wrapper aside a span {
       position: absolute;
       display: block;
       height: 25px;
@@ -487,13 +494,13 @@ main aside {
       line-height: 2;
       color: #fff;
       text-align: center; }
-  main aside a:hover, main aside a.act {
+  .wrapper aside a:hover, .wrapper aside a.act {
     background: linear-gradient(15deg, #465EE0 -50%, #ED2582 100%); }
-    main aside a:hover img:first-of-type, main aside a.act img:first-of-type {
+    .wrapper aside a:hover img:first-of-type, .wrapper aside a.act img:first-of-type {
       display: none; }
-    main aside a:hover img:last-of-type, main aside a.act img:last-of-type {
+    .wrapper aside a:hover img:last-of-type, .wrapper aside a.act img:last-of-type {
       display: inline; }
-  main aside a.act, main aside a.act img {
+  .wrapper aside a.act, .wrapper aside a.act img {
     cursor: default; }
 
 .catalog aside {
@@ -628,7 +635,7 @@ main aside {
       color: #696969;
       line-height: 1.2; }
     .productCard > div > div:first-of-type > div > span, .productCard > div > div:last-of-type > div > div > span {
-      width: 50%; }
+      white-space: nowrap; }
     .productCard > div > div:first-of-type > div > span:first-of-type, .productCard > div > div:last-of-type > div > div > span:first-of-type {
       color: #D3D3D3;
       text-decoration: line-through; }
@@ -702,6 +709,8 @@ main aside {
       border: none;
       background-color: #ED2582;
       color: #fff; }
+      .productCard > div > div:nth-of-type(2) a img {
+        display: none; }
     @media only all and (max-width: 1180px) {
       .productCard > div > div:nth-of-type(2) > span, .productCard > div > div:nth-of-type(2) a {
         width: 230px;
@@ -897,6 +906,8 @@ main aside {
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
         background: url("../tempImages/img3.jpg") no-repeat center center;
         background-size: cover; }
+      .basket > div table td:first-child a.del, .history > div table td:first-child a.del {
+        display: none; }
     .basket > div table td:nth-child(2), .history > div table td:nth-child(2) {
       padding-left: 20px;
       text-align: left; }
@@ -906,6 +917,8 @@ main aside {
       .basket > div table td:nth-child(2) p:first-of-type, .history > div table td:nth-child(2) p:first-of-type {
         margin-bottom: 25px;
         font-size: 16px; }
+      .basket > div table td:nth-child(2) p.price, .history > div table td:nth-child(2) p.price {
+        display: none; }
     .basket > div table td:nth-child(3), .history > div table td:nth-child(3) {
       text-align: center; }
       .basket > div table td:nth-child(3) span, .history > div table td:nth-child(3) span {
