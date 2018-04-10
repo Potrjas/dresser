@@ -229,6 +229,8 @@ header {
         margin-top: 20px; }
       header > div > a .imgWh {
         display: none; }
+      header > div > a span {
+        display: none; }
     header > div > a:nth-of-type(2) img, header > div > a:nth-of-type(3) img {
       height: 20px; }
     header > div > a:hover {

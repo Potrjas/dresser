@@ -446,7 +446,7 @@ header {
         color: #696969;
         line-height: 1.2; }
       .catalog > div section > div > span {
-        width: 50%; }
+        white-space: nowrap; }
       .catalog > div section > div > span:first-of-type {
         color: #D3D3D3;
         text-decoration: line-through; }
