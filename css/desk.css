@@ -285,11 +285,23 @@ header {
           -webkit-text-fill-color: transparent; }
       header > div .menu a {
         display: block;
-        padding-top: 20px;
+        padding: 20px 10px 0 0;
         color: #696969;
         text-align: right; }
-        header > div .menu a img {
+        header > div .menu a span:first-of-type {
           display: none; }
+        header > div .menu a span:last-of-type {
+          position: absolute;
+          height: 25px;
+          width: 25px;
+          top: 15px;
+          right: -20px;
+          border-radius: 50%;
+          background-color: #ED2582;
+          font-size: 12px;
+          line-height: 2;
+          color: #fff;
+          text-align: center; }
       header > div .menu a.act, header > div .menu a:hover {
         text-decoration: underline #ED2582; }
 

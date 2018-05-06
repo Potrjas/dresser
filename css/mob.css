@@ -74,9 +74,6 @@ html, body {
 aside {
   display: none; }
 
-.wrapper * {
-  filter: blur(0); }
-
 .nicescroll-rails {
   display: none !important; }
 
@@ -205,6 +202,8 @@ h3 {
     line-height: 1.5;
     text-align: center;
     color: #D3D3D3; }
+  .reg * {
+    filter: blur(0) !important; }
 
 header {
   position: fixed;
@@ -216,6 +215,8 @@ header {
     display: flex;
     justify-content: space-around;
     background-color: #fff; }
+    header > div #menu span {
+      display: none; }
     header > div > a {
       height: 60px;
       width: 60px;
@@ -230,7 +231,16 @@ header {
       header > div > a .imgWh {
         display: none; }
       header > div > a span {
-        display: none; }
+        position: absolute;
+        height: 25px;
+        width: 25px;
+        left: 35px;
+        border-radius: 50%;
+        background-color: #ED2582;
+        font-size: 12px;
+        line-height: 2;
+        color: #fff;
+        text-align: center; }
     header > div > a:nth-of-type(2) img, header > div > a:nth-of-type(3) img {
       height: 20px; }
     header > div > a:hover {
@@ -288,10 +298,10 @@ header {
       font-size: 21px;
       line-height: 1.5;
       z-index: 10; }
-      header > div .menu span {
+      header > div .menu > span {
         display: none;
         padding: 20px 0 50px; }
-        header > div .menu span a {
+        header > div .menu > span a {
           display: block;
           height: 40px;
           width: 240px;
@@ -308,12 +318,28 @@ header {
         display: none;
         padding-top: 10px;
         color: #696969;
-        text-align: center;
-        margin-right: 24px; }
-        header > div .menu > a img {
-          opacity: 0;
+        text-align: center; }
+        header > div .menu > a span:first-of-type {
+          position: absolute;
           height: 30px;
-          width: auto; }
+          width: 30px;
+          right: calc(50% + 95px); }
+          header > div .menu > a span:first-of-type img {
+            height: 100%;
+            width: auto;
+            vertical-align: top; }
+        header > div .menu > a span:last-of-type {
+          position: absolute;
+          height: 25px;
+          width: 25px;
+          top: 15px;
+          left: calc(50% + 100px);
+          border-radius: 50%;
+          background-color: #ED2582;
+          font-size: 12px;
+          line-height: 2;
+          color: #fff;
+          text-align: center; }
       header > div .menu > a.act img, header > div .menu > a:hover img {
         opacity: 1; }
 

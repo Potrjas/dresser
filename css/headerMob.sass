@@ -8,6 +8,8 @@ header
 		display: flex
 		justify-content: space-around
 		background-color: #fff
+		#menu span
+			display: none
 		> a
 			height: 60px
 			width: 60px
@@ -22,7 +24,16 @@ header
 			.imgWh
 				display: none
 			span
-				display: none
+				position: absolute
+				height: 25px
+				width: 25px
+				left: 35px
+				border-radius: 50%
+				background-color: $red
+				font-size: 12px
+				line-height: 2
+				color: #fff
+				text-align: center
 		> a:nth-of-type(2) img,> a:nth-of-type(3) img
 			height: 20px
 		> a:hover
@@ -80,7 +91,7 @@ header
 			font-size: 21px
 			line-height: 1.5
 			z-index: 10
-			span
+			> span
 				display: none
 				padding: 20px 0 50px
 				a
@@ -101,10 +112,26 @@ header
 				padding-top: 10px
 				color: $grey
 				text-align: center
-				margin-right: 24px
-				img
-					opacity: 0
+				span:first-of-type
+					position: absolute
 					height: 30px
-					width: auto
+					width: 30px
+					right: calc(50% + 95px)
+					img
+						height: 100%
+						width: auto
+						vertical-align: top
+				span:last-of-type
+					position: absolute
+					height: 25px
+					width: 25px
+					top: 15px
+					left: calc(50% + 100px)
+					border-radius: 50%
+					background-color: $red
+					font-size: 12px
+					line-height: 2
+					color: #fff
+					text-align: center
 			> a.act img, > a:hover img
 					opacity: 1
